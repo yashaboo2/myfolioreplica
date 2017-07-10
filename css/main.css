@@ -1,0 +1,352 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	/*50 px adds space to the top of the page and the content*/
+	padding-top: 50px;
+}
+
+section {
+	padding: 50px 0;
+}
+
+/*selects the nav tag in the html sheet*/
+nav {
+	/*sets the background color to a teal color, -color found from color picker on W3*/
+	background-color: rgb(0, 153, 153);
+	/*90px for height is about 3/4inch visibly*/
+	height: 60px;
+	/*realigns the nav bar to the top of page with 0 left right, fixed it to the page and z-index layerd it*/
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	/*cr4eates the layers on the page*/
+	z-index: 100;
+}
+
+nav > a {
+	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	left: 25px;
+	position: absolute;
+	text-align: left;
+	text-decoration: none;
+	top: 10px;
+}
+
+.folio {
+	font-family: 'Open Sans', sans-serif;
+	color: #cccc00;
+	text-align: left;
+}
+
+
+nav ul {
+	top: 5px;
+	position: absolute;
+	right: 25px;
+}
+
+/*selcts logo class, no text style and removes bullet points from logo*/
+.logo {
+	list-style-type: none;
+	font-weight:bold;
+	color: white;
+	float: left;
+	font-size: 24px;
+}
+
+.logo {
+	margin: 20px;
+	text-decoration: none;
+}
+
+
+ul.navlinks {
+	width: 700px;
+	/*the text starts on the left side, so when its margain is set to 0 auto it automatically tells it to move to the right*/
+	margin: 0 50px;
+	/*creates space/padding on top of the list*/
+	padding: 25px;
+	float: right;
+}
+
+/*specifiaclly select the list items in the navlinks class*/
+ul.navlinks li {
+	/*adding more to the morgin which pushes it over to the right more*/
+	margin-left: 40px;
+	font-size: 14px;
+
+}
+
+ul.navlinks li {
+	/*displays the list in one straight line*/
+	display: inline-block;
+	float: right;
+	padding: 0 15px;
+}
+
+ul.navlinks li > a {
+	text-decoration: none;
+	/*because the list items are inside of an ancher tag the color of the font  will go in the a selector*/
+	color: white;
+	/*not sure what the webkit transition does still saw no difference*/
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/*creates a effect when you move to curser over the links*/
+ul.navlinks li > a:hover,
+ul.navlinks li > a:focus {
+	color: #cccc00;
+
+}
+
+.contain {
+	background-image: url('../img/yasha_Smiles.jpg');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	height: 500px;
+	color: #fff;
+	padding-top: 15%;
+	text-align: center;
+}
+
+.contain h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+.contain h2 {
+	/*although h2 is usually smaller heading than h1 it can be sized to be larger thatn h1*/
+font-size: 72px;
+/*0 margin closes the wide spacing between h1 and h2 top and bottom*/
+	margin: 0;
+	letter-spacing: 20px;
+}
+
+.contain p {
+	margin-top: 0;
+}
+
+.contain img {
+	padding: 35px 0;
+}
+
+header a {
+	background-color: #CDC71D;
+	color: #0B1016;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 35px;
+	text-decoration: none;
+	/*i believe the transistion has to do with the way the colors changes when hovering*/
+	transition: all 0.3s ease-in-out;
+}
+
+header a:hover {
+	/*creates a white background when hoverign ober the anchored boxed area*/
+	background-color: #fff;
+	color: #0B1016;
+	cursor: pointer;
+}
+
+#about {
+	text-align: center;
+}
+/*selects all about, service and contact names and their title classes change color and size*/
+#about .title,
+#service .title,
+#contact .title{
+	color: #02918c;
+	font-size: 46px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#about img {
+	margin: 15px 0;	
+}
+
+#about > p {
+	color: #7e8287;
+	line-height: 41px;
+	/*adds line spacing in the paragraph so its easier for user to read*/
+	margin: 0 auto;
+	width:70%;
+}
+
+#about span {
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.aboutBoxes {
+	color: #7e8287;
+    margin: 0 auto;
+    /*80% of the page width leaves 10% on each side, and centers the boxes*/
+    width: 80%;
+}
+
+.aboutBox {
+	/*create division lines between each box with out the full 4 sides*/
+    border-right: 1px solid black;
+	float: left;
+    margin: 3% 0;
+    padding: 0 4%;
+    width: 16%;
+}
+
+.aboutBox h2 {
+	/*made font smaller*/
+	font-size: 18px;
+}
+
+.aboutBox p { 
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.aboutBox i {
+	color: #02918c;
+}
+
+.aboutBox:last-child {
+	border: none;
+}
+
+#service {
+	background-image: url(../img/service.png);
+	background-size: cover;
+	display: inline-block;
+	padding-left: 10%;
+}
+
+.serviceWrapper {
+	width: 40%;
+}
+
+#service img {
+	margin: 15px 0;	
+}
+
+.serviceWrapper > p {
+    color: #7e8287;
+	line-height: 41px;
+}
+
+.serviceBox {
+	float: left;
+    width: 40%;
+    color: #7e8287;
+}
+
+.serviceBox.left {
+	margin-left: 15%;
+}
+
+.serviceBox i {
+	color:  #02918c;
+	margin: 5px 0;
+}
+
+.serviceBox h2 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+.serviceBox > p {
+	font-size: 11px;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+#contact {
+	padding-bottom: 0;
+	text-align: center;
+}
+
+#contact img {
+	margin: 15px 0;	
+}
+
+#contact p {
+    color:  #7e8287;
+	line-height: 41px;
+	width: 53%;
+    margin: 0 auto 5%;
+}
+
+.contactForm {
+	background: #0B0B0B;
+	color: #7D8186;
+	padding: 50px 25px;
+}
+
+.contactForm input {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #7D8186;
+	color:#7D8186;
+	font-size: 24px;
+	height: 30px;
+	text-align: center;
+	width: 60%;
+}
+
+.contactForm textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #7D8186;
+	border-top: 1px solid #7D8186;
+	color:#7D8186;
+	font-size: 24px;
+	text-align: center;
+	width: 60%;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+	outline: none;
+}
+
+.contactForm .half {
+	margin: 2% 25%;
+}
+
+.contactForm .three_quarters {
+	margin: 4% 10%;
+}
+
+.contactForm button {
+	background-color: #CDC71D;
+	border:none;
+	clear: both;
+	color: #0B1016; 
+	font-weight: bold;
+	font-size: 14px;
+	padding: 10px 35px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.contactForm button:hover {
+	background-color: #fff; 
+	color: #0B1016;
+	cursor: pointer;
+}
+
+#sitefooter {
+	background: #000;
+	padding: 10px 0;
+	width: 100%;
+}
+
+#sitefooter p {
+	color:  #7e8287;
+	text-align: center;
+}
